@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terra Incognita is an interactive research platform dedicated to archaeology and ancient history. We explore the mysteries of the past, speculate about pre-flood civilizations, question established timelines, and share groundbreaking discoveries from around the world." />
+  <meta name="keywords" content="archaeology, ancient history, discoveries, ancient civilizations" />
+  <title>Terra Incognita — Archaeology & Ancient History</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-symbol">⊕</span>
+        <div class="logo-text">
+          <span class="logo-title">Terra Incognita</span>
+          <span class="logo-sub">Archaeology &amp; Ancient History</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+          <!-- REGIONS DROPDOWN -->
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Regions <span class="caret">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ancient Mesopotamia</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">Egypt</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">Greece</a></li>
+              <li><a href="#">North America</a></li>
+              <li><a href="#">Rome</a></li>
+              <li><a href="#">South America</a></li>
+              <li><a href="#">Turkey</a></li>
+            </ul>
+          </li>
+
+          <!-- TIME PERIODS DROPDOWN -->
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Time Periods <span class="caret">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Younger Dryas (9700 BCE)</a></li>
+              <li><a href="#">8000 – 3500 BCE</a></li>
+              <li><a href="#">3500 – 2000 BCE</a></li>
+              <li><a href="#">2000 – 500 BCE</a></li>
+              <li><a href="#">500 BCE – 0 CE</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link">Journalism</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Topics</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Map</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+
+        </ul>
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO BANNER ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dispatches from the Ancient World</p>
+      <h1 class="hero-headline">Unearthing the<br><em>Lost Chapters</em><br>of Civilization</h1>
+      <a href="#" class="hero-cta">Explore the Archive</a>
+    </div>
+    <div class="hero-img">
+      <img src="images/bambuk-egypt-2230584.jpg" alt="Ancient hieroglyphs" class="hero-img2">
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ===== MAIN LAYOUT ===== -->
+  <div class="page-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+
+        <h3 class="sidebar-heading">Browse by Region</h3>
+
+        <!-- Region: Ancient Mesopotamia -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Ancient Mesopotamia</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Asia -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Asia</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Egypt -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Egypt</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Europe -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Europe</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Greece -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Greece</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: North America -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">North America</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Rome -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Rome</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: South America -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">South America</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Region: Turkey -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Turkey</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <div class="sidebar-divider"></div>
+
+        <h3 class="sidebar-heading">Browse by Era</h3>
+
+        <!-- Time Period: Younger Dryas -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Younger Dryas (9700 BCE)</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Time Period: 8000–3500 BCE -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">8000 – 3500 BCE</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Time Period: 3500–2000 BCE -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">3500 – 2000 BCE</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Time Period: 2000–500 BCE -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">2000 – 500 BCE</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+        <!-- Time Period: 500 BCE–0 CE -->
+        <details class="sidebar-section">
+          <summary class="sidebar-region">500 BCE – 0 CE</summary>
+          <ul class="sidebar-nested">
+            <li><a href="#">— Sub-topic 1</a></li>
+            <li><a href="#">— Sub-topic 2</a></li>
+            <li><a href="#">— Sub-topic 3</a></li>
+          </ul>
+        </details>
+
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <div class="section-label">Featured</div>
+      <h2 class="section-title">Latest Discoveries</h2>
+
+      <div class="card-grid">
+
+        <article class="card card-featured">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder img-1">
+              <img src="images/pyramids_giza1.jpg" alt="Pyramids of Giza">
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Egypt</span>
+            <h3 class="card-title">Sealed Chamber Found Beneath the Giza Plateau</h3>
+            <p class="card-excerpt">Ground-penetrating radar surveys have revealed a previously unknown void extending deep beneath the eastern causeway, raising questions about the plateau's true purpose.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder img-2">
+              <img src="images/gobekli_tepe1.jpg" alt="Göbekli Tepe carvings">
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Turkey</span>
+            <h3 class="card-title">New Carvings Unearthed at Göbekli Tepe</h3>
+            <p class="card-excerpt">Excavations at the world's oldest known megalithic complex continue to push back the timeline of organized human ritual by thousands of years.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder img-3">
+              <img src="images/amazon_rainforest1.jpg" alt="Amazon jungle">
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">South America</span>
+            <h3 class="card-title">LiDAR Reveals Vast Urban Grid in the Amazon</h3>
+            <p class="card-excerpt">Aerial laser scanning has exposed an interconnected network of settlements previously hidden beneath the jungle canopy, rewriting our understanding of pre-Columbian civilization.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <div class="card-img-placeholder img-4">
+              <img src="images/sumerian_tablet.jpg" alt="Sumerian cuneiform tablet">
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Ancient Mesopotamia</span>
+            <h3 class="card-title">Sumerian Tablet Describes Pre-Flood Dynasties</h3>
+            <p class="card-excerpt">A newly translated cuneiform tablet from the Ur III period details a list of antediluvian kings whose reigns span tens of thousands of years, echoing myths from across the ancient world.</p>
+            <a href="#" class="card-link">Read Article →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-label" style="margin-top:3rem;">Journalism</div>
+      <h2 class="section-title">Field Reports</h2>
+
+      <div class="list-articles">
+        <article class="list-article">
+          <div class="list-article-meta">
+            <span class="card-tag">Greece</span>
+            <span class="list-date">March 2025</span>
+          </div>
+          <h4><a href="#">Antikythera Mechanism's Missing Sections May Have Been Located on the Seabed</a></h4>
+          <p>New deep-dive robotic surveys near the original wreck site identified bronze fragments consistent with the remaining gearing components of history's most sophisticated ancient device.</p>
+        </article>
+        <article class="list-article">
+          <div class="list-article-meta">
+            <span class="card-tag">North America</span>
+            <span class="list-date">February 2025</span>
+          </div>
+          <h4><a href="#">Serpent Mound Alignments Suggest Knowledge of Precession</a></h4>
+          <p>New astronomical analysis of Ohio's Great Serpent Mound indicates the earthwork may encode long-cycle celestial knowledge spanning thousands of years beyond its construction date.</p>
+        </article>
+        <article class="list-article">
+          <div class="list-article-meta">
+            <span class="card-tag">Asia</span>
+            <span class="list-date">January 2025</span>
+          </div>
+          <h4><a href="#">Submerged Structures Off the Coast of Yonaguni Revisited</a></h4>
+          <p>A multidisciplinary team returns to Japan's most controversial underwater formation, bringing updated dating techniques and new evidence of tool marks and right-angle geometry.</p>
+        </article>
+      </div>
+
+    </main>
+  </div><!-- End-page-wrapper -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="logo-symbol">⊕</span>
+        <span class="footer-brand-name">Terra Incognita</span>
+        <p class="footer-tagline">Independent archaeology &amp; ancient history journalism.<br>Questioning the timeline since 2026.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Regions</a></li>
+          <li><a href="#">Time Periods</a></li>
+          <li><a href="#">Journalism</a></li>
+          <li><a href="#">Archaeologists</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-icons">
+
+          <a href="#" class="social-icon facebook" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+
+          <a href="#" class="social-icon instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="#" class="social-icon youtube" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+
+          <a href="#" class="social-icon twitter" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>X / Formerly Twitter</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Terra Incognita. All rights reserved. All historical claims are speculative and for editorial purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger toggle
+    const ham = document.getElementById('hamburger');
+    const nav = document.querySelector('.main-nav');
+    ham.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      ham.classList.toggle('active');
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.has-dropdown')) {
+        document.querySelectorAll('.dropdown-menu').forEach(d => d.classList.remove('show'));
+      }
+    });
+
+    // Nav dropdown toggle on click (better than CSS hover for accessibility)
+    document.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const menu = link.nextElementSibling;
+        const isOpen = menu.classList.contains('show');
+        document.querySelectorAll('.dropdown-menu').forEach(d => d.classList.remove('show'));
+        if (!isOpen) menu.classList.add('show');
+      });
+    });
+  </script>
+</body>
+</html>
