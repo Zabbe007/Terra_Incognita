@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terra Incognita is an interactive research platform dedicated to archaeology and ancient history. We explore the mysteries of the past, speculate about pre-flood civilizations, question established timelines, and share groundbreaking discoveries from around the world." />
+  <meta name="keywords" content="archaeology, ancient history, discoveries, ancient civilizations" />
+  <title>Terra Incognita — Archaeology & Ancient History</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-symbol">&#7788;&#207;</span>
+        <div class="logo-text">
+          <span class="logo-title">Terra Incognita</span>
+          <span class="logo-sub">Archaeology &amp; Ancient History</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-list">
+
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- REGIONS DROPDOWN -->
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Regions <span class="caret">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ancient Mesopotamia</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">Egypt</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">Greece</a></li>
+              <li><a href="#">North America</a></li>
+              <li><a href="#">Rome</a></li>
+              <li><a href="#">South America</a></li>
+              <li><a href="#">Turkey</a></li>
+            </ul>
+          </li>
+
+          <!-- TIME PERIODS DROPDOWN -->
+          <li class="nav-item has-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              Time Periods <span class="caret">&#9662;</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Younger Dryas (9700 BCE)</a></li>
+              <li><a href="#">8000 – 3500 BCE</a></li>
+              <li><a href="#">3500 – 2000 BCE</a></li>
+              <li><a href="#">2000 – 500 BCE</a></li>
+              <li><a href="#">500 BCE – 0 CE</a></li>
+              <li><a href="#">0 CE – 500 CE</a></li>
+              <li><a href="#">500 CE – 1500 CE</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link">Journalism</a></li>
+          <li class="nav-item"><a href="indexTopics.html" class="nav-link">Topics</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Map</a></li>
+          <li class="nav-item"><a href="indexAbout.html" class="nav-link">About</a></li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN LAYOUT ===== -->
+  <div class="page-wrapper">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+
+        <form id="searchForm" class="sidebar-search" role="search" aria-label="Site search">
+          <label for="searchBox" style="font-family: var(--font-display); color: var(--color-accent); font-weight: bold;">Search the site:</label>
+          <input type="search" id="searchBox" name="q" placeholder="Search..." aria-label="Search the site">
+          <button type="submit" id="searchBox-btn">&#x1F50D;&#xFE0E;</button>
+        </form>
+        <div id="results" class="sidebar-results"></div>
+
+        <h3 class="sidebar-heading">TOPICS</h3>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Who Built The Pyramids</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">SAR Doppler Tomography Scans Under Giza Pyramid</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">The Ancient Flood</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">The Book Of Enoch</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Water Erosion On The Sphinx</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Labyrinth Under Hawara, Egypt</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">The Dead Sea Scrolls</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Ark Of The Covenant</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Browse All.....</summary>
+        </details>
+
+        <div class="sidebar-divider"></div>
+
+        <h3 class="sidebar-heading">Browse by Era</h3>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">Younger Dryas (9700 BCE)</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">8000 – 3500 BCE</summary>
+        </details>
+    
+        <details class="sidebar-section">
+          <summary class="sidebar-region">3500 – 2000 BCE</summary>
+        </details>
+       
+        <details class="sidebar-section">
+          <summary class="sidebar-region">2000 – 500 BCE</summary>
+        </details>
+
+        <details class="sidebar-section">
+          <summary class="sidebar-region">500 BCE – 0 CE</summary>
+        </details>
+
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+      <section class="about-section">
+        <h1 class = "about-title">About Terra Incognita</h1>
+        <p class="about-description">Terra Incognita is an interactive research platform dedicated to archaeology and ancient history. We explore the mysteries of the past, speculate about pre-flood civilizations, question established timelines, and share groundbreaking discoveries from around the world. Hence the name "Terra Incognita" the ancient Latin phrase meaning <a class="unknown-land">"unknown land"</a> seemed fitting for our mission.</p>
+
+        <p class="about-description">Our mission is to provide a space for independent journalism that challenges mainstream narratives and encourages critical thinking about our shared human history. We believe that by examining the evidence with an open mind, we can uncover new insights into the ancient world and inspire curiosity about our origins.</p>
+
+        <p class="about-description">Founded in 2026, Terra Incognita has quickly become a hub for researchers, enthusiasts, and anyone interested in exploring the unknown aspects of our past. We cover a wide range of topics, from ancient engineering marvels to controversial archaeological finds, and we strive to present information in an engaging and accessible way.</p>
+
+        <p class="about-description">Join us on this journey of discovery as we delve into the mysteries of ancient civilizations and challenge conventional wisdom about our history.</p>
+
+        <div class = "about-footer">
+
+          <a href = "mailto:zabbe7@gmail.com" class="about-footer-link">~Contact Us~</a>
+          <a href="#" class="about-footer-link">~Join Our Community~</a>
+          <a href="#" class="about-footer-link">~Privacy Policy~</a><br><br>
+          <p class="about-footer-text">All historical claims on this site are speculative and for editorial purposes only. We encourage readers to explore the evidence and draw their own conclusions.</p>
+        </div>
+      </section>
+
+    </main>
+  </div><!-- End-page-wrapper -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <span class="logo-symbol">&#7788;&#207;</span>
+        <span class="footer-brand-name">Terra Incognita</span>
+        <p class="footer-tagline">Independent archaeology &amp; ancient history journalism.<br>Questioning the timeline since 2026.</p>
+          <!--<div class="footer-img-wrap">
+            <img src="images/alien_running.png" alt="Alien running away with a stone tablet" class="footer-img">
+          </div>-->
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-heading">Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="indexArchive.html">Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-icons">
+
+          <a href="#" class="social-icon facebook" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span>
+          </a>
+
+          <a href="#" class="social-icon instagram" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a href="#" class="social-icon youtube" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+
+          <a href="#" class="social-icon twitter" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>X / Formerly Twitter</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Terra Incognita. All rights reserved. All historical claims are speculative and for editorial purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger toggle
+    const ham = document.getElementById('hamburger');
+    const nav = document.querySelector('.main-nav');
+    ham.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      ham.classList.toggle('active');
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.has-dropdown')) {
+        document.querySelectorAll('.dropdown-menu').forEach(d => d.classList.remove('show'));
+      }
+    });
+
+    // Nav dropdown toggle on click (better than CSS hover for accessibility)
+    document.querySelectorAll('.has-dropdown > .nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const menu = link.nextElementSibling;
+        const isOpen = menu.classList.contains('show');
+        document.querySelectorAll('.dropdown-menu').forEach(d => d.classList.remove('show'));
+        if (!isOpen) menu.classList.add('show');
+      });
+    });
+  </script>
+  <img id="alien-runner" src="images/alien_running.png" alt="Alien running with a stone tablet">
+  <script src="js/search.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
