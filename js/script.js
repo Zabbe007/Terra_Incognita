@@ -1,4 +1,4 @@
-// ── Image Gallery ──
+// === Image Gallery ===
 if (document.getElementById("lightbox")) {
 
   const items    = Array.from(document.querySelectorAll(".gallery-item"));
@@ -67,7 +67,7 @@ if (document.getElementById("lightbox")) {
 }
 
 
-// ── Alien Runner Animation ──
+// === Alien Runner animation; initialized by clicking "unknown land" link in about page ===
 if (document.querySelector(".unknown-land")) {
 
   const alien = document.getElementById('alien-runner');

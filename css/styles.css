@@ -3,7 +3,7 @@
    Aesthetic: Aged parchment meets editorial museum catalog
    ============================================================ */
 
-/* ── CSS Custom Properties ── */
+/* === CSS Custom Properties === */
 :root {
   --color-bg:         #f5f0e8;       /* warm parchment */
   --color-bg-alt:     #ede7d9;       /* slightly darker parchment */
@@ -40,7 +40,7 @@
   --transition:       0.22s ease;
 }
 
-/* ── Reset & Base ── */
+/* === Reset & Base === */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -61,7 +61,7 @@ img { max-width: 100%; display: block; }
 
 ul { list-style: none; }
 
-/* ── Decorative rule helper ── */
+/* === Decorative rule helper === */
 .section-label {
   font-family: var(--font-display);
   font-size: 0.68rem;
@@ -247,7 +247,7 @@ ul { list-style: none; }
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-/* Hamburger */
+/* Hamburger for Mobile Navigation */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -281,8 +281,7 @@ ul { list-style: none; }
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(28,24,16,0.82) 0%, rgba(139,58,30,0.55) 60%, rgba(28,24,16,0.7) 100%),
-    repeating-linear-gradient(
-      45deg,
+  repeating-linear-gradient(
       transparent,
       transparent 40px,
       rgba(184,145,42,0.04) 40px,
@@ -365,7 +364,7 @@ ul { list-style: none; }
 
 .hero-img2-wrap {
   position: absolute;
-  top: 76.5%;
+  top: 63%;
   left: 72%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -418,7 +417,7 @@ ul { list-style: none; }
 .sidebar-inner { padding: 1.4rem 1.2rem 1.8rem; }
 
 
-/* Search box */
+/* === Search box ===*/
 #searchBox {
   width: 80%;
   padding: 0.5rem 0.8rem;
@@ -547,7 +546,7 @@ ul { list-style: none; }
   padding-top: 0.5rem;
 }
 
-/* ── Card Grid ── */
+/* === Card Grid === */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -594,7 +593,7 @@ ul { list-style: none; }
 
 .card:hover .card-img-placeholder { transform: scale(1.04); }
 
- /*Placeholder images using CSS gradients to simulate themed images
+ /*===Placeholder images using CSS gradients to simulate themed images===
 .img-1 {
   background: linear-gradient(135deg, #3d2e1a 0%, #6b4423 40%, #8b6635 70%, #b89054 100%);
 }
@@ -681,10 +680,17 @@ ul { list-style: none; }
   letter-spacing: 0.2em;
 }
 
-/* ── About Page ── */
+/* === About Page === */
 .about-section {
   background-color: var(--color-sidebar-bg);
-  max-width: 800px;
+  background-image:
+   linear-gradient(rgba(232, 224, 207, 0.85), rgba(232, 224, 207, 0.85)),
+    url('../images/human_evolution1.jpg');
+  background-size: contain;
+  background-position: top 6.4rem left 50%;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-border);
+  max-width: 80rem;
   margin: 2rem auto;
   padding: 3rem 3rem;
   border-radius: .7rem;
@@ -737,6 +743,7 @@ ul { list-style: none; }
   margin-top: 0.6rem;
 }
 
+/* === Alien Runner animation === */
 #alien-runner {
   position: fixed;
   bottom: 1rem;
@@ -773,10 +780,11 @@ ul { list-style: none; }
 
 .unknown-land {
   color: var(--color-accent);
+  font-weight: 900;
   cursor: pointer;
 }
 
-/* ── Gallery Page ── */
+/* === Gallery Page === */
 .gallery-filters {
   display: flex;
   flex-wrap: wrap;
@@ -859,7 +867,7 @@ ul { list-style: none; }
   line-height: 1.3;
 }
 
-/* ── Lightbox ──────────────────────────────────────────────────────────────── */
+/* === Lightbox === */
 .lightbox {
   display: none;
   position: fixed;
@@ -928,7 +936,7 @@ ul { list-style: none; }
 .lightbox-prev  { left: 1.2rem;  top: 50%; transform: translateY(-50%); }
 .lightbox-next  { right: 1.2rem; top: 50%; transform: translateY(-50%); }
 
-/* ── List Articles ── */
+/* === List Articles === */
 .list-articles {
   display: flex;
   flex-direction: column;
@@ -1217,7 +1225,7 @@ ul { list-style: none; }
 }
 
 @media (max-width: 480px) {
-  .hero-headline { font-size: 1rem; }
+  .hero-headline { font-size: 1.5rem; }
   .hero-img1 { position: absolute; top: 17%; }
   .hero-img2 { display: none; }
   .card-grid { grid-template-columns: 1fr; }

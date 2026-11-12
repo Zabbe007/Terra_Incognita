@@ -1,4 +1,4 @@
-// ── Simple Site Search ──────────────────────────────────────────────────────
+// === 1. Handle the search form submit ===
 // Maps keywords to the page they live on.
 
 const searchIndex = [
@@ -17,7 +17,7 @@ const searchIndex = [
   { keywords: ["about", "mission", "contact", "founded", "platform", "journalism"],      page: "indexAbout.html" },
 ];
 
-// ── 1. Handle the search form submit ────────────────────────────────────────
+// === 1. Handle the search form submit ===
 const form = document.getElementById("searchForm");
 if (form) {
   form.addEventListener("submit", function (e) {
@@ -35,7 +35,7 @@ if (form) {
   });
 }
 
-// ── 2. On page load, highlight any matches in the page ──────────────────
+// === 2. On page load, highlight any matches in the page ===
 const params = new URLSearchParams(window.location.search);
 const query  = params.get("q");
 
@@ -68,7 +68,7 @@ if (query) {
   }
 }
 
-// ── 3. Click anywhere to clear highlights ───────────────────────────────────
+// === 3. Click anywhere to clear highlights ===
 if (query) {
   document.addEventListener("click", function clearHighlights() {
     document.querySelectorAll("mark").forEach(mark => {
